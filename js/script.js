@@ -1,47 +1,47 @@
-let menuIcon=document.querySelector('#menu-icon');
-let navBar=document.querySelector('.navbar');
+// let menuIcon=document.querySelector('#menu-icon');
+// let navBar=document.querySelector('.navbar');
 
-menuIcon.onclick= () => {
-    menuIcon.classList.toggle('bx-x');
-    navBar.classList.toggle('active');
-};
+// menuIcon.onclick= () => {
+//     menuIcon.classList.toggle('bx-x');
+//     navBar.classList.toggle('active');
+// };
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-
-window.onscroll=() => {
-    sections.forEach(sec => {
-        let top=window.scrollY;
-        let offset=sec.offsetTop -150;
-        let height= sec.offsetHeight;
-        let id=sec.getAttribute('id');
-
-        if(top >= offset && top <offset + height){
-            navLinks.forEach(links =>{
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id +']').classList.add('active');
-            });
-
-        };
-    });
-
-    let header = document.querySelector('header');
-header.classList.toggle('sticky',window.scrollY >100);
+// let sections = document.querySelectorAll('section');
+// let navLinks = document.querySelectorAll('header nav a');
 
 
-menuIcon.classList.remove('bx-x');
-navBar.classList.remove('active');
-};
+// window.onscroll=() => {
+//     sections.forEach(sec => {
+//         let top=window.scrollY;
+//         let offset=sec.offsetTop -150;
+//         let height= sec.offsetHeight;
+//         let id=sec.getAttribute('id');
+
+//         if(top >= offset && top <offset + height){
+//             navLinks.forEach(links =>{
+//                 links.classList.remove('active');
+//                 document.querySelector('header nav a[href*=' + id +']').classList.add('active');
+//             });
+
+//         };
+//     });
+
+//     let header = document.querySelector('header');
+// header.classList.toggle('sticky',window.scrollY >100);
 
 
-const element = document.querySelector('.chessboard');
-element.addEventListener('click',() =>{
-    let elementHTML=document.querySelector('.chesspic');
-    elementHTML.classList.toggle('x');
+// menuIcon.classList.remove('bx-x');
+// navBar.classList.remove('active');
+// };
+
+
+// const element = document.querySelector('.chessboard');
+// element.addEventListener('click',() =>{
+//     let elementHTML=document.querySelector('.chesspic');
+//     elementHTML.classList.toggle('x');
     
-    elementHTML.innerHTML=`<img src="images/chess2.jpg" class="chesspic" alt="">`;
-});
+//     elementHTML.innerHTML=`<img src="images/chess2.jpg" class="chesspic" alt="">`;
+// });
 
 
 
@@ -49,7 +49,7 @@ element.addEventListener('click',() =>{
 var i = 0;
 let txt = "Hello, I am ";
 let txt2 = "DAN CARLO SANTIAGO";
-let txt3 = "Fullstack Developer =)";
+let txt3 = "Backend Developer";
 let txt4="Aspiring ";
 var speed = 100;
 
@@ -79,10 +79,16 @@ window.onload = function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 
-
-
-
   if (i === txt.length + txt2.length + txt3.length + txt4.length) {
-    document.querySelector('.my_pic').src = "./assets/smile_nog.png";
+    
+// document.querySelector('.icons').style.display = "inline-flex";
+// document.querySelector('.icons2').style.display = "inline-flex";
+// document.querySelector('.icons3').style.display = "inline-flex";
+
   }
+
+
+  // if (i === txt.length + txt2.length + txt3.length + txt4.length) {
+  //   document.querySelector('.my_pic').src = "./images/smile_nog.png";
+  // }
 };

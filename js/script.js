@@ -6,6 +6,16 @@ menuIcon.onclick= () => {
     navBar.classList.toggle('active');
  };
 
+ const menuOptions = document.querySelectorAll('.navbar a'); // Adjust the selector as needed
+
+// Add click event to each menu option
+menuOptions.forEach(option => {
+    option.onclick = () => {
+        menuIcon.classList.remove('bx-x');
+        navBar.classList.remove('active');
+    };
+});
+
 // let sections = document.querySelectorAll('section');
 // let navLinks = document.querySelectorAll('header nav a');
 

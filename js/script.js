@@ -45,7 +45,6 @@
 
 
 
-
 var i = 0;
 let txt = "Hello, I am ";
 let txt2 = "DAN CARLO SANTIAGO";
@@ -79,16 +78,17 @@ window.onload = function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 
-  if (i === txt.length + txt2.length + txt3.length + txt4.length) {
+//   if (i === txt.length + txt2.length + txt3.length + txt4.length) {
     
-// document.querySelector('.icons').style.display = "inline-flex";
-// document.querySelector('.icons2').style.display = "inline-flex";
-// document.querySelector('.icons3').style.display = "inline-flex";
+//  document.querySelector('.icons').style.display = "inline-flex";
+//  document.querySelector('.icons2').style.display = "inline-flex";
+//  document.querySelector('.icons3').style.display = "inline-flex";
 
-  }
+//   }
 
 
-  // if (i === txt.length + txt2.length + txt3.length + txt4.length) {
-  //   document.querySelector('.my_pic').src = "./images/smile_nog.png";
-  // }
+//    if (i === txt.length + txt2.length + txt3.length + txt4.length) {
+//      document.querySelector('.my_pic').src = "./images/smile_nog.png";
+//    }
 };
+

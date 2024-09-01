@@ -101,7 +101,7 @@ transition: .3s;
 
 
 .home-img img{
-    width: 45vh;
+    width: 35vh;
     filter: grayscale(35%);
     border-radius: 50%;
     
@@ -132,7 +132,7 @@ span{
     font-size: 1.6rem;
 }
 .social-media a{
-    display: none;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
@@ -145,6 +145,9 @@ span{
     margin: 3rem 1.5rem 3rem 0;
     transition: 1.3s ease;
     
+}
+.social-media .email{
+    font-size: 0.3rem;
 }
 
  .social-media a:hover{
@@ -466,7 +469,7 @@ start */
 
         
     }
-    .projectsv2{
+    .projects{
         background: var(--second-bg-color);
     }
 .activity{
@@ -552,18 +555,31 @@ cursor: pointer;
     margin-bottom: 5rem;
 }
 
+@media(max-width: 1500px){
+    .project-img{
+        width: auto;
+       
+        
+    }
+    
+}
+
 @media(max-width: 1300px){
     .project-img{
-        /* width: auto; */
+        width: auto;
        
         /* border-style: solid;
-        border-color: red; */
+        border-color: red;  */
        
     }
 }
 @media(max-width: 1200px){
     html{
         font-size: 55%;
+    }
+    .project-img img{
+        max-width: 35vw;
+        
     }
 }
 
@@ -583,11 +599,8 @@ cursor: pointer;
     .portfolio{
         padding-bottom: 7rem;
     }
-    .contact{
-        min-height: auto;
-    }
     .project-img img{
-        max-width: 35vh;
+        max-width: 35vw;
         
     }
         

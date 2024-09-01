@@ -58,7 +58,7 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem; /* 9% */
+     padding: 2rem 9%; /* 9% */
     background: var(--bg-color);
     display: flex;
     /* justify-content: space-between; */
@@ -581,7 +581,7 @@ color: var(--text-color);
         justify-content: space-between;
     }
     #menu-icon{
-        display: block;
+        display: inline;
     }
     .navbar{
         position: absolute;
